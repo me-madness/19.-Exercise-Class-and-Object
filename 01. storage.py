@@ -13,6 +13,7 @@ class Storage:
  
     def get_products(self):
         return Storage.storage
+
     
 # Second task by the lecture
 
@@ -29,4 +30,6 @@ class Storage:
     def get_products(self):
         return Storage.storage
     
+# Third way by me
+
         
