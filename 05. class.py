@@ -1,21 +1,27 @@
 # First way from the lecture
 
-class Town:
+class Class:
+    __students_count = 22
  
-    def __init__(self, name: str):
+    def __init__(self, name):
         self.name = name
-        self.latitude = "0°N"
-        self.longitude = "0°E"
+        self.students = []
+        self.grades = []
  
-    def set_latitude(self, latitude: str):
-        self.latitude = latitude
+    def add_student(self, name: str, grade: float) -> None:
+        if Class.__students_count > len(self.students):
+            self.students.append(name)
+            self.grades.append(grade)
  
-    def set_longitude(self, longitude: str):
-        self.longitude = longitude
+    def get_average_grade(self) -> str:
+        average_grade = sum(self.grades) / len(self.students)
+        return float(f"{average_grade:.2f}")
  
     def __repr__(self):
-        return f"Town: {self.name} | Latitude: {self.latitude} | Longitude: {self.longitude}"
-    
+        students = ", ".join(self.students)
+        average_grade = self.get_average_grade()
+        return f"The students in {self.name}: {students}. Average grade: {average_grade}"
 
+       
 # Second way by me
 
