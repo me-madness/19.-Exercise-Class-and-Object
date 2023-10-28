@@ -15,3 +15,4 @@ class Weapon:
     
 
 # Second way by me    
+
