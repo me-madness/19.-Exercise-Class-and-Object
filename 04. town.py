@@ -1,23 +1,21 @@
-# First task from the lecture
+# First way from the lecture
 
-class Catalogue:
+class Town:
  
     def __init__(self, name: str):
         self.name = name
-        self.products = []
+        self.latitude = "0°N"
+        self.longitude = "0°E"
  
-    def add_product(self, product_name: str):
-        self.products.append(product_name)
+    def set_latitude(self, latitude: str):
+        self.latitude = latitude
  
-    def get_by_letter(self, first_letter: str):
-        return [product for product in self.products if product.startswith(first_letter)]
+    def set_longitude(self, longitude: str):
+        self.longitude = longitude
  
     def __repr__(self):
-        returning_string = f"Items in the {self.name} catalogue:\n"
-        returning_string += "\n".join(sorted(self.products))
-        return returning_string
+        return f"Town: {self.name} | Latitude: {self.latitude} | Longitude: {self.longitude}"
+    
 
-
-
-# Second task from me
+# Second way by me
 
