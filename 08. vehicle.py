@@ -29,3 +29,9 @@ class Vehicle:
             return f"{self.model} {self.type} is owned by: {self.owner}"
         else:
             return f"{self.model} {self.type} is on sale: {self.price}"
+        
+        
+        
+# Second task fro me
+
+        
