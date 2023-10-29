@@ -18,3 +18,8 @@ class Article:
  
     def __repr__(self):
         return f"{self.title} - {self.content}: {self.author}"
+    
+    
+# Second task from me
+
+    
