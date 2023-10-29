@@ -21,3 +21,9 @@ class Movie:
  
     def __repr__(self):
         return f"Movie name: {self.name}; Movie director: {self.director}. Total watched movies: {Movie.__watched_movies}"
+    
+    
+
+# Second task from me
+
+    
