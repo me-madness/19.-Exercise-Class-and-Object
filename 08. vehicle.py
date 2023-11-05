@@ -1,4 +1,4 @@
-# First task from tehe lecture
+# First task from the lecture
 
 class Vehicle:
  
